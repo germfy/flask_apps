@@ -27,7 +27,7 @@ recipes = [
 # will only respond to GET requests:
 @app.route('/')
 def index():
-    return f'<H1>{app.config["STRIPE_KEY"]}</H1><br>{app.config["USUARIO"]}'
+    return f'<H1>{app.config["STRIPE_KEY"]}</H1><br>El super usuario<H2>{app.config["USUARIO"]}</H2>'
             # return '<H1>' + app.config +'</H1><br>+app.config['USUARIO']
 
 
